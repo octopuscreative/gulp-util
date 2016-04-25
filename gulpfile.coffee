@@ -1,8 +1,8 @@
-### 
+###
 | ----------------------------------------------------------------
 | Gulpfile
 | ----------------------------------------------------------------
-| 
+|
 | This acts as the primary "hub" for Gulp to find the necessary
 | tasks needed for pre-processing Slim, Sass and CoffeeScript.
 | As you can see, the file is very "slim" itself because of
@@ -16,10 +16,11 @@
 |
 ###
 
+# Update this to match your desired workflow
 tasks = [
   'serve',
   'sass',
-  'coffee',
+  'browserify',
   'package',
   'document'
 ]
@@ -27,4 +28,3 @@ tasks = [
 gulp = require('./gulp')(tasks)
 
 gulp.task "default", ['serve']
-

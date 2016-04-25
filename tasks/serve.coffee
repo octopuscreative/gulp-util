@@ -1,8 +1,8 @@
-### 
+###
 | ----------------------------------------------------------------
 | Serve (BrowserSync + Watch)
 | ----------------------------------------------------------------
-| 
+|
 | Handles live reloading your Ghost theme over multiple devices
 | and browsers. Extremely useful for developing themes that
 | are both responsive and cross-browser. Learn much more
@@ -25,5 +25,3 @@ module.exports = (gulp, run, bs, reload, paths) ->
       gulp.watch paths.sass,   ['sass']
       gulp.watch paths.coffee, ['coffee']
       gulp.watch paths.hbs, bs.reload
-
-      
