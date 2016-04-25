@@ -19,6 +19,8 @@
 # Update this to match your desired workflow
 tasks = [
   'serve',
+  'lint-scss',
+  'lint-coffee',
   'sass',
   'browserify',
   'package',
